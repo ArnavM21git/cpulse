@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include "src/contest_fetcher.cpp"
 using namespace std;
 
 int main(int argc,char* argv[])
@@ -13,12 +14,15 @@ int main(int argc,char* argv[])
     string cmd=argv[1];
 
     if (cmd == "contests") {
-        cout << "Fetching contests..." << endl;
-    } else if (cmd == "streak") {
+        fetchContests();
+    }
+    else if (cmd == "streak") {
         cout << "Showing streak..." << endl;
-    } else if (cmd == "push") {
+    }
+    else if (cmd == "push") {
         cout << "Pushing to GitHub..." << endl;
-    } else {
+    }
+    else {
         cout << "Unknown command: " << cmd << endl;
     }
 
