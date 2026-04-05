@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#include "src/contest_fetcher.cpp"
+#include "src/contest_fetcher.h"
 using namespace std;
 
 int main(int argc,char* argv[])

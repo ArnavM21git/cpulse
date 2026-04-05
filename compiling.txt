@@ -1,0 +1,27 @@
+compile in msy2 mingw64
+
+
+steps:
+
+⚠️ **You're still in PowerShell!** Look at your prompt — `PS D:\...`. You need to compile from **MSYS2 terminal**, not PowerShell.
+
+---
+
+Go back to **MSYS2 MinGW64** window and run there:
+
+```bash
+cd D:/CODEIT/C++/cpulse
+g++ main.cpp src/contest_fetcher.cpp -lcurl -o cpulse
+./cpulse contests
+
+👉 MSYS2 terminal looks like this at the prompt:
+```
+Arnav@ArnavMundada MINGW64 ~
+$
+```
+
+⚠️ Make sure it says **MINGW64** not CLANG64. If it says CLANG64, close it and open **"MSYS2 MinGW x64"** from Start Menu specifically.
+
+---
+
+*"Right place, right tool."*
